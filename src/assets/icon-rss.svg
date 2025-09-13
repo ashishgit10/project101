@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg4497"
+   viewBox="0 0 29.999998 29.999998"
+   height="8.4666662mm"
+   width="8.4666662mm">
+  <defs
+     id="defs4499" />
+  <metadata
+     id="metadata4502">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(189.28571,-460.21935)"
+     id="layer1">
+    <g
+       id="g199"
+       transform="translate(-529.25171,-865.88565)">
+      <path
+         id="path201"
+         d="m 354.966,1356.105 c 8.285,0 15,-6.717 15,-15.001 0,-8.284 -6.715,-14.999 -15,-14.999 -8.285,0 -15,6.715 -15,14.999 0,8.284 6.715,15.001 15,15.001"
+         style="fill:#e9644a" />
+      <g
+         id="g203">
+        <path
+           id="circle205"
+           d="m 353.68899,1345.275 a 2.4920001,2.4920001 0 0 1 -2.492,2.492 2.4920001,2.4920001 0 0 1 -2.492,-2.492 2.4920001,2.4920001 0 0 1 2.492,-2.492 2.4920001,2.4920001 0 0 1 2.492,2.492 z"
+           style="fill:#ffffff" />
+        <path
+           id="path207"
+           d="m 362.011,1347.767 c -0.688,0 -1.245,-0.559 -1.245,-1.246 0,-6.671 -4.145,-10.813 -10.813,-10.813 -0.665,-0.176 -1.051,-0.901 -0.872,-1.565 0.114,-0.432 0.451,-0.771 0.872,-0.926 3.938,0 7.275,1.259 9.663,3.642 2.387,2.383 3.642,5.726 3.642,9.663 -10e-4,0.686 -0.56,1.245 -1.247,1.245 z"
+           style="fill:#ffffff" />
+        <path
+           id="path209"
+           d="m 357.295,1347.767 c -0.688,0 -1.245,-0.559 -1.245,-1.246 0,-4.045 -2.053,-6.098 -6.098,-6.098 -0.688,0 -1.246,-0.559 -1.245,-1.246 0,-0.688 0.558,-1.245 1.245,-1.245 5.457,0 8.589,3.131 8.589,8.588 10e-4,0.688 -0.556,1.246 -1.244,1.247 -0.001,0 -0.001,0 -0.002,0 z"
+           style="fill:#ffffff" />
+      </g>
+    </g>
+  </g>
+</svg>

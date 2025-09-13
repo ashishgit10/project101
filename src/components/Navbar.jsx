@@ -57,7 +57,9 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-10">
+          <nav className="hidden md:flex items-center gap-10
+          
+          ">
             <NavItem to="/"><div className="text-white">ABOUT</div></NavItem>
             <NavItem to="/practice"><div className="text-white">EXPERTISE</div></NavItem>
             <NavItem to="/people"><div className="text-white">PEOPLE</div></NavItem>
