@@ -79,7 +79,7 @@ const Section1 = () => {
                 {item.category}
               </div>
               <div className="border-t-2 border-[#c97b63] pt-3">
-                <h4 className="text-xl font-medium text-[#004b87] leading-snug hover:underline cursor-pointer">
+                <h4 className="text-xl font-medium font-play text-[#004b87] leading-snug hover:underline cursor-pointer">
                   {item.title}
                 </h4>
                 <p className="mt-2 text-sm italic text-gray-600">
@@ -92,16 +92,22 @@ const Section1 = () => {
       </Swiper>
 
       {/* Custom Navigation Buttons */}
-      <div className="absolute inset-y-0 -left-10 flex items-center z-10">
-        <button ref={prevRef} className="p-2">
-          <img src={ArrowLeft} alt="Prev" className="w-12 h-10" />
-        </button>
+      <div className="">
+
+        <div className="absolute -bottom-60 inset-y-0 -left-6 md:bottom-0 flex items-center z-10">
+          <button ref={prevRef} className="p-2">
+            <img src={ArrowLeft} alt="Prev" className="w-12 h-10" />
+          </button>
+        </div>
+
+        <div className="absolute -bottom-60 inset-y-0 -right-6 md:bottom-0 flex items-center z-10">
+          <button ref={nextRef} className="p-2">
+            <img src={ArrowRight} alt="Next" className="w-12 h-10" />
+          </button>
+        </div>
+
       </div>
-      <div className="absolute inset-y-0 -right-6 flex items-center z-10">
-        <button ref={nextRef} className="p-2">
-          <img src={ArrowRight} alt="Next" className="w-12 h-10" />
-        </button>
-      </div>
+
     </div>
   );
 };

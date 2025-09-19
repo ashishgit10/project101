@@ -48,8 +48,8 @@ const People = () => {
   }, []);
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16">
-      <h3 className="text-[#004b87] text-2xl md:text-3xl font-semibold mb-8 text-center md:text-left">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6  pb-10 ">
+      <h3 className="text-[#004b87] text-2xl md:text-3xl font-play font-semibold mb-8 text-center md:text-left">
         The People <br /> of AZB
       </h3>
 
@@ -84,7 +84,7 @@ const People = () => {
         </div>
 
         {/* RIGHT - Quote Box */}
-        <div className="relative border border-[#B6654C] w-full md:w-1/2 lg:w-1/3 p-8 md:p-10 min-h-[320px] md:min-h-[400px] flex flex-col items-center justify-start text-center">
+        <div className="relative mx-40 md:mx-0 border border-[#B6654C] w-full md:w-1/2 lg:w-1/3 p-8 md:p-10 min-h-[320px] md:min-h-[400px] flex flex-col items-center justify-start text-center">
           {/* Top Quote SVG */}
           <div className="flex justify-center absolute -top-5 bg-white px-4">
             <img src={qot} alt="quote mark" className="w-8 h-8" />
@@ -92,7 +92,7 @@ const People = () => {
 
           {/* Quote Text */}
           <div className="flex-1 flex flex-col justify-center">
-            <p className="text-[#B6654C] italic text-base md:text-lg leading-relaxed mb-6">
+            <p className="text-[#B6654C] italic text-[26px] text-base md:text-lg leading-relaxed mb-6">
               We’ve never been about size; we’ve always been about quality.
             </p>
             <p className="mt-2 text-[#B6654C] relative z-10 font-semibold text-sm md:text-base">
@@ -105,11 +105,6 @@ const People = () => {
             src={Pattern}
             alt="decorative pattern"
             className="absolute bottom-0 right-0 w-20 md:w-32"
-          />
-          <img
-            src={ellipse}
-            alt="decorative ellipse"
-            className="absolute bottom-0 right-6 w-28 md:w-40"
           />
         </div>
       </div>

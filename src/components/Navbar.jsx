@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronRight, Plus, Minus } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
-const NavItem = ({ to, children }) => (
+const NavItem = ({ to, children, onClick }) => (
   <NavLink
     to={to}
     className={({ isActive }) =>
       "px-3 py-2 rounded-md text-sm font-medium " +
-      (isActive
-        ? "text-blue-700"
-        : "text-gray-700 hover:text-blue-600")
+      (isActive ? "text-white " : "text-white hover:text-[#aabf91]")
     }
+    onClick={onClick}
   >
     {children}
   </NavLink>
@@ -20,6 +20,9 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Accordion state
+  const [openSection, setOpenSection] = useState(null);
 
   // hide/show navbar on scroll
   useEffect(() => {
@@ -35,6 +38,41 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  // Menu structure with sublinks
+  const menuItems = [
+    {
+      title: "ABOUT",
+      links: [
+        { label: "Purpose", to: "/purpose" },
+        { label: "History", to: "/history" },
+        { label: "Awards & Rankings", to: "/awards" },
+      ],
+    },
+    {
+      title: "EXPERTISE",
+      links: [
+        { label: "Corporate Law", to: "/corporate" },
+        { label: "Litigation", to: "/litigation" },
+      ],
+    },
+    {
+      title: "PEOPLE",
+      links: [
+        { label: "Founding Partners", to: "/founding-partners" },
+        { label: "Senior Partners", to: "/senior-partners" },
+        { label: "Partners", to: "/partners" },
+      ],
+    },
+    {
+      title: "RESOURCES",
+      links: [],
+    },
+    {
+      title: "CAREERS",
+      links: [],
+    },
+  ];
+
   return (
     <>
       {/* Navbar */}
@@ -46,26 +84,22 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <div className="w-10 h-10 bg-[#002346] text-white rounded flex items-center justify-center font-bold">
-              AZB
+              <img src={logo} className="rounded" alt="logo" />
             </div>
             <div>
-              <div className="text-lg font-semibold text-white">AZB & Partners</div>
-              <div className="text-xs text-white">
-                Advocates & Solicitors
-              </div>
+              <div className="text-lg font-semibold text-white">Astreus</div>
+              <div className="text-xs text-white font-semibold">Legal</div>
             </div>
           </Link>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-10
-          
-          ">
-            <NavItem to="/"><div className="text-white">ABOUT</div></NavItem>
-            <NavItem to="/practice"><div className="text-white">EXPERTISE</div></NavItem>
-            <NavItem to="/people"><div className="text-white">PEOPLE</div></NavItem>
-             <NavItem to="/people"><div className="text-white">IMPACT</div></NavItem>
-            <NavItem to="/resources"><div className="text-white">RESOURCES</div></NavItem>
-            <NavItem to="/careers"><div className="text-white">CAREERS</div></NavItem>
+          <nav className="hidden md:flex items-center  gap-10">
+            <NavItem  to="/">ABOUT</NavItem>
+            <NavItem  to="/expertise">EXPERTISE</NavItem>
+            <NavItem  to="/people">PEOPLE</NavItem>
+            <NavItem  to="/impact">IMPACT</NavItem>
+            <NavItem  to="/resources">RESOURCES</NavItem>
+            <NavItem  to="/careers">CAREERS</NavItem>
           </nav>
 
           {/* Mobile Hamburger */}
@@ -73,7 +107,7 @@ export default function Navbar() {
             className="md:hidden p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
-            {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+            {mobileOpen ? <X size={28} className="text-white" /> : <Menu size={38} className="text-white" />}
           </button>
         </div>
       </header>
@@ -83,26 +117,49 @@ export default function Navbar() {
         className={`fixed top-0 left-0 w-full h-screen bg-white z-40 transform transition-transform duration-700 ease-in-out ${mobileOpen ? "translate-y-0" : "-translate-y-full"
           }`}
       >
-        <div className="flex flex-col items-center justify-center h-full space-y-8 text-lg font-medium">
-          <NavItem to="/" onClick={() => setMobileOpen(false)}>About</NavItem>
-          <NavItem to="/practice" onClick={() => setMobileOpen(false)}>Expertise</NavItem>
-          <NavItem to="/people" onClick={() => setMobileOpen(false)}>People</NavItem>
-          <NavItem to="/resources" onClick={() => setMobileOpen(false)}>Resources</NavItem>
-          <NavItem to="/careers" onClick={() => setMobileOpen(false)}>Careers</NavItem>
-          <a
-            href="#contact"
-            className="px-4 py-2 border rounded hover:bg-gray-50"
-            onClick={() => setMobileOpen(false)}
-          >
-            Contact
-          </a>
-          <a
-            href="/#search"
-            className="px-4 py-2 bg-blue-600 text-white rounded"
-            onClick={() => setMobileOpen(false)}
-          >
-            Search
-          </a>
+        <div className="flex flex-col h-full overflow-y-auto px-3 pb-10 pt-24 space-y-6 text-lg font-medium">
+          {menuItems.map((menu, index) => (
+            <div key={index}>
+              {/* Section Header */}
+              <div
+                className="flex justify-between items-center cursor-pointer py-2 border-b border-gray-200"
+                onClick={() =>
+                  setOpenSection(openSection === index ? null : index)
+                }
+              >
+                <span className="font-semibold text-[#002346]">
+                  {menu.title}
+                </span>
+                {menu.links.length > 0 ? (
+                  openSection === index ? (
+                    <Minus size={20} className="text-[#002346]" />
+                  ) : (
+                    <Plus size={20} className="text-[#002346]" />
+                  )
+                ) : null}
+              </div>
+
+              {/* Sub Links */}
+              {openSection === index && menu.links.length > 0 && (
+                <div
+                  className={`ml-4 overflow-hidden transition-all duration-500 ease-in-out ${openSection === index ? "max-h-96 opacity-100 mt-2" : "max-h-0 opacity-0"
+                    }`}
+                >
+                  {menu.links.map((link, subIndex) => (
+                    <Link
+                      key={subIndex}
+                      to={link.to}
+                      className="flex justify-between items-center py-2 text-gray-700 hover:text-blue-600"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {link.label}
+                      <ChevronRight size={18} />
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -31,13 +31,13 @@ const Timeline2 = () => {
       tags: "Energy, Infrastructure",
       category: "Publications",
     },
-      {
+    {
       title: "Third Amendment to the GNA Regulations – Key Highlights",
       date: "Sep 08, 2025",
       tags: "Energy, Infrastructure",
       category: "Publications",
     },
-         {
+    {
       title: "Third Amendment to the GNA Regulations – Key Highlights",
       date: "Sep 08, 2025",
       tags: "Energy, Infrastructure",
@@ -60,7 +60,7 @@ const Timeline2 = () => {
       <div className="text-center mb-12">
         <div className="w-5 h-5 rounded-full bg-[#B6654C] mx-auto" />
         <div className="w-px h-12 bg-[#B6654C] mx-auto" />
-          <div className="w-12 border-t border-[#B6654C] mx-auto mb-3"/>
+        <div className="w-12 border-t border-[#B6654C] mx-auto mb-3" />
         <h3 className="text-[#B6654C] font-bold uppercase tracking-wider text-lg">
           Latest Resources
         </h3>
@@ -68,7 +68,7 @@ const Timeline2 = () => {
       </div>
 
       {/* Swiper */}
-      <div className="relative">
+      <div className="">
         <Swiper
           modules={[Navigation]}
           spaceBetween={40}
@@ -87,7 +87,7 @@ const Timeline2 = () => {
                   {item.category}
                 </div>
                 <div className="border-t border-[#B6654C] pt-3">
-                  <h4 className="text-lg font-medium text-[#004b87] leading-snug hover:underline cursor-pointer">
+                  <h4 className="text-lg font-medium font-play text-[#004b87] leading-snug hover:underline cursor-pointer">
                     {item.title}
                   </h4>
                   <p className="mt-2 text-sm italic text-gray-600">
@@ -99,22 +99,15 @@ const Timeline2 = () => {
           ))}
         </Swiper>
 
-        {/* Custom Navigation Buttons */}
-        <button
-          ref={prevRef}
-          className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center gap-2 text-[#B6654C] z-10"
-        >
-          <img src={ArrowLeft} alt="Prev" className="w-12 h-10"/>
-          <span className="w-2 h-2 bg-[#B6654C] rounded-full" />
-        </button>
-        <button
-          ref={nextRef}
-          className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-2 text-[#B6654C] z-10"
-        >
-          <span className="w-2 h-2 bg-[#B6654C] rounded-full" />
-          <img src={ArrowRight} alt="Next" className="w-12 h-10"/>
-        </button>
       </div>
+      {/* Custom Navigation Buttons */}
+      <button ref={prevRef} className="absolute left-0 bottom-0 md:top-2/3 md:-bottom-0 -translate-y-1/2  gap-2 text-[#B6654C] z-10">
+        <img src={ArrowLeft} alt="Prev" className="w-12 h-10" />
+
+      </button>
+      <button ref={nextRef} className="absolute right-0 bottom-0 md:top-2/3 md:-bottom-0 -translate-y-1/2 gap-2 text-[#B6654C] z-10">
+        <img src={ArrowRight} alt="Next" className="w-12 h-10" />
+      </button>
     </div>
   );
 };

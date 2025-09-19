@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Home from './pages/Home'
 
 import DisclaimerModal from './components/DisclaimerModal'
+import Expertise from './pages/Expertise'
+import Navbar from './components/Navbar'
 
 export default function App() {
   const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
@@ -23,6 +23,7 @@ export default function App() {
         )}
         <Routes>
           <Route path="/" element={<Home />} />
+           <Route path="/expertise" element={<Expertise />} />
         </Routes>
       </main>
     {/*   <Footer /> */}

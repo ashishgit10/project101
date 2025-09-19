@@ -23,7 +23,7 @@ const SpotlightSection = () => {
   return (
     <section
       ref={sectionRef}
-      className={`min-h-screen flex flex-col justify-center items-center px-6 py-12 lg:p-48 transition-colors duration-700 ${scrolled ? "bg-white" : "bg-[#b0c999]"
+      className={` py-24 flex flex-col lg:pt-12 px-6 transition-colors duration-700 ${scrolled ? "bg-white" : "bg-[#b0c999]"
         }`}
     >
       <div className="w-full max-w-7xl mx-auto flex flex-col">
