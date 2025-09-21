@@ -10,7 +10,7 @@ import Person3 from "../assets/Isha_Baloni.jpeg";
 import Person4 from "../assets/Sreeraj_Prabhakaran_K.jpeg";
 import Pattern from "../assets/pattern2.png";
 import qot from "../assets/quote.svg";
-import ellipse from "../assets/ellipse1.svg";
+
 
 const people = [
   { name: "Aniket Singh", image: Person1 },
@@ -54,7 +54,7 @@ const People = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6  pb-10 ">
       <h3 className="text-[#004b87] text-2xl md:text-3xl font-play font-semibold mb-8 text-center md:text-left">
-        The People <br /> of AZB
+        The People <br /> of Astreus Legal
       </h3>
 
       {/* ✅ Responsive Flexbox */}
