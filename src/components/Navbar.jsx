@@ -83,8 +83,8 @@ export default function Navbar() {
               <img src={logo} className="rounded" alt="logo" />
             </div>
             <div>
-              <div className="text-lg font-semibold text-white">Astreus</div>
-              <div className="text-xs text-white font-semibold">Legal</div>
+              <div className="text-lg font-semibold font-play text-white">Astreus</div>
+              <div className="text-xs text-white font-play font-semibold">Legal</div>
             </div>
           </Link>
 
