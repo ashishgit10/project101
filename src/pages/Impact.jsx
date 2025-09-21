@@ -3,7 +3,7 @@ import { ChevronRight, Plus, Minus } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import linkedin from "../assets/linkedin.png";
-export default function Resource() {
+export default function Impact() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const menu = [
@@ -31,10 +31,10 @@ export default function Resource() {
         {/* Left Side */}
         <div className="flex-1">
           <h2 className="text-4xl font-light font-play text-[#a45c48] leading-snug mb-6">
-            Knowledge-sharing is intrinsic to equity and inclusivity.
+            Our undertakings for long-term impact are an organic extension of our purpose.
           </h2>
           <p className="text-[#002346] leading-relaxed text-lg">
-            This is a repository of thought leadership, deep insights and strong viewpoints, legal and other news and events and how they impact the industry and our clients.             </p>
+            They are to employ our deep knowledge of the law beyond the business, the transaction, the deal. To use the opportunities and skills we possess, to reflect on the culture we’re creating. Individually and collectively, these are our efforts to help shape the thinking of our future generations, and arm them with strategies for true, sustainable growth.          </p>
         </div>
 
         {/* Right Side Dropdown Menu */}
@@ -114,7 +114,7 @@ export default function Resource() {
             rel="noopener noreferrer"
             className="hover:text-blue-600"
           >
-            <img src={linkedin} className="w-4"/>
+             <img src={linkedin} className="w-4"/>
           </a>
           <a
             href="#rss"

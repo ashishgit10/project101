@@ -52,11 +52,11 @@ export default function Navbar() {
     },
     {
       title: "PEOPLE",
-      links: [
-        { label: "Founding Partners", to: "/founding-partners" },
-        { label: "Senior Partners", to: "/senior-partners" },
-        { label: "Partners", to: "/partners" },
-      ],
+      to: "/peoplepage",
+    },
+    {
+      title: "IMPACT",
+      to: "/impact", // 🔑 direct link
     },
     {
       title: "RESOURCES",
@@ -72,9 +72,8 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <header
-        className={`fixed top-0 left-0 w-full bg-[#002346] z-50 transition-transform duration-500 ${
-          showNav ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`fixed top-0 left-0 w-full bg-[#002346] z-50 transition-transform duration-500 ${showNav ? "translate-y-0" : "-translate-y-full"
+          }`}
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
           {/* Logo */}
@@ -90,9 +89,9 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-10">
-            <NavItem to="/about">ABOUT</NavItem>
+            <NavItem to="/">ABOUT</NavItem>
             <NavItem to="/expertise">EXPERTISE</NavItem>
-            <NavItem to="/people">PEOPLE</NavItem>
+            <NavItem to="/peoplepage">PEOPLE</NavItem>
             <NavItem to="/impact">IMPACT</NavItem>
             <NavItem to="/resources">RESOURCES</NavItem>
             <NavItem to="/careers">CAREERS</NavItem>
@@ -114,9 +113,8 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-white z-40 transform transition-transform duration-700 ease-in-out ${
-          mobileOpen ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`fixed top-0 left-0 w-full h-screen bg-white z-40 transform transition-transform duration-700 ease-in-out ${mobileOpen ? "translate-y-0" : "-translate-y-full"
+          }`}
       >
         <div className="flex flex-col h-full overflow-y-auto px-3 pb-10 pt-24 space-y-6 text-lg font-medium">
           {menuItems.map((menu, index) => (

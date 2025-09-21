@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ChevronRight, Plus, Minus } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-
+import linkedin from "../assets/linkedin.png";
 export default function ExpertisePage() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -24,10 +24,10 @@ export default function ExpertisePage() {
   return (<>
 
 
-    <Navbar bgColor="bg-[#fdf9f3]" textclr="text-[#002346]"/>
+    <Navbar bgColor="bg-[#fdf9f3]" textclr="text-[#002346]" />
     <div className="bg-[#fdf9f3] min-h-screen flex flex-col justify-between">
       {/* Expertise Section */}
-      <section className="flex flex-col md:flex-row px-6 md:px-16 pb-16 pt-40 gap-12 flex-1">
+      <section className="flex flex-col md:flex-row px-6 lg:px-48 pb-16 pt-40 gap-12 flex-1">
         {/* Left Side */}
         <div className="flex-1">
           <h2 className="text-4xl font-light font-play text-[#a45c48] leading-snug mb-6">
@@ -69,11 +69,10 @@ export default function ExpertisePage() {
 
               {/* Dropdown Content with animation */}
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === index
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
                     ? "max-h-40 opacity-100 mt-3"
                     : "max-h-0 opacity-0"
-                }`}
+                  }`}
               >
                 <ul className="space-y-2 pl-2">
                   {item.links.map((link, i) => (
@@ -119,7 +118,7 @@ export default function ExpertisePage() {
             rel="noopener noreferrer"
             className="hover:text-blue-600"
           >
-            in
+            <img src={linkedin} className="w-4" />
           </a>
           <a
             href="#rss"
@@ -130,6 +129,6 @@ export default function ExpertisePage() {
         </div>
       </footer>
     </div>
-      </>
+  </>
   );
 }

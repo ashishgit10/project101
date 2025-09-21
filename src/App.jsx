@@ -4,7 +4,10 @@ import Home from './pages/Home'
 
 import DisclaimerModal from './components/DisclaimerModal'
 import Expertise from './pages/Expertise'
-import Navbar from './components/Navbar'
+import PeoplePage from './pages/PeoplePage'
+import Imapct from './pages/Impact'
+import Impact from './pages/Impact'
+import Resource from './pages/Resource'
 
 export default function App() {
   const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
@@ -13,7 +16,7 @@ export default function App() {
 
   return (
     <div className="">
-   
+
       <main className="flex-grow">
         {!acceptedDisclaimer && (
           <DisclaimerModal onAccept={() => {
@@ -23,10 +26,15 @@ export default function App() {
         )}
         <Routes>
           <Route path="/" element={<Home />} />
-           <Route path="/expertise" element={<Expertise />} />
+          <Route path="/expertise" element={<Expertise />} />
+          <Route path="/peoplepage" element={<PeoplePage />} />
+          <Route path="/impact" element={<Impact />} />
+          <Route path="/resources" element={<Resource />} />
+
+
         </Routes>
       </main>
-    {/*   <Footer /> */}
+      {/*   <Footer /> */}
     </div>
   )
 }

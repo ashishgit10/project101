@@ -3,7 +3,7 @@ import { ChevronRight, Plus, Minus } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import linkedin from "../assets/linkedin.png";
-export default function Resource() {
+export default function PeoplePage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const menu = [
@@ -31,10 +31,11 @@ export default function Resource() {
         {/* Left Side */}
         <div className="flex-1">
           <h2 className="text-4xl font-light font-play text-[#a45c48] leading-snug mb-6">
-            Knowledge-sharing is intrinsic to equity and inclusivity.
+            Driven by excellence, focused on strategies for the longer term.
           </h2>
           <p className="text-[#002346] leading-relaxed text-lg">
-            This is a repository of thought leadership, deep insights and strong viewpoints, legal and other news and events and how they impact the industry and our clients.             </p>
+            This is the crux of who we are. It is an articulation of precision in purpose, from the Firm’s beginnings to where we are today. Our collective eye is unerringly trained on tomorrow.
+          </p>
         </div>
 
         {/* Right Side Dropdown Menu */}
@@ -114,7 +115,7 @@ export default function Resource() {
             rel="noopener noreferrer"
             className="hover:text-blue-600"
           >
-            <img src={linkedin} className="w-4"/>
+         <img src={linkedin} className="w-4"/>
           </a>
           <a
             href="#rss"
