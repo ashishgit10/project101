@@ -4,15 +4,19 @@ import {
   ResponsiveContainer,
 } from "react-stacked-center-carousel";
 
-import Person1 from "../assets/People1.jpg";
+import Person1 from "../assets/Aniket_Singh.jpeg";
+import Person2 from "../assets/Ashish_Chaudhary.jpeg";
+import Person3 from "../assets/Isha_Baloni.jpeg";
+import Person4 from "../assets/Sreeraj_Prabhakaran_K.jpeg";
 import Pattern from "../assets/pattern2.png";
 import qot from "../assets/quote.svg";
 import ellipse from "../assets/ellipse1.svg";
 
 const people = [
-  { name: "ASADULLA THANGAL", image: Person1 },
-  { name: "ANITA SHARMA", image: Person1 },
-  { name: "ROHIT MEHRA", image: Person1 },
+  { name: "Aniket Singh", image: Person1 },
+  { name: "Ashish Chaudhary", image: Person2 },
+  { name: "Isha Baloni", image: Person3 },
+  { name: "Sreeraj Prabhakaran K", image: Person4 },
 ];
 
 // ✅ SlideCard
