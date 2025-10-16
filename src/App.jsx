@@ -6,7 +6,7 @@ import Expertise from './pages/Expertise'
 import PeoplePage from './pages/PeoplePage'
 import Impact from './pages/Impact'
 import Resource from './pages/Resource'
-import logo from './assets/Logo.jpeg'
+import logo from './assets/logo.jpeg'
 
 export default function App() {
   const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
@@ -45,8 +45,9 @@ export default function App() {
           <DisclaimerModal
             onAccept={() => {
               setAcceptedDisclaimer(true)
-              localStorage.setItem('acceptedDisclaimer', 'true')
+              localStorage.setItem('acceptedDisclaimer', 'true') 
             }}
+            onClose={() => setAcceptedDisclaimer(true)}
           />
         )}
         <Routes>
