@@ -114,11 +114,11 @@ const Hero = () => {
 
             <main className="relative z-10 mt-[100vh]">
 
-                <section className=" bg-white flex items-center justify-center px-4 py-20 sm:px-6 lg:px-8">
+              {/*   <section className=" bg-white flex items-center justify-center px-4 py-20 sm:px-6 lg:px-8">
                     <div className="w-full max-w-7xl">
                         <Section1 />
                     </div>
-                </section>
+                </section> */}
 
                 <section className=" bg-white">
                     <div className="">

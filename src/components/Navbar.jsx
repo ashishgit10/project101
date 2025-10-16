@@ -8,7 +8,7 @@ const NavItem = ({ to, children, onClick }) => (
     to={to}
     className={({ isActive }) =>
       "px-3 py-2 rounded-md text-sm font-medium " +
-      (isActive ? "text-white" : "text-white hover:text-[#aabf91]")
+      (isActive ? "text-[#002346]" : "text-[#002346] hover:text-[#aabf91]")
     }
     onClick={onClick}
   >
@@ -72,18 +72,18 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <header
-        className={`fixed top-0 left-0 w-full bg-[#002346] z-50 transition-transform duration-500 ${showNav ? "translate-y-0" : "-translate-y-full"
+        className={`fixed top-0 left-0 w-full text-[#002346] bg-white z-50 transition-transform duration-500 ${showNav ? "translate-y-0" : "-translate-y-full"
           }`}
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#002346] text-white rounded flex items-center justify-center font-bold">
+            <div className="w-10 h-10 text-[#002346]  rounded flex items-center justify-center font-bold">
               <img src={logo} className="rounded" alt="logo" />
             </div>
             <div>
-              <div className="text-lg font-semibold font-play text-white">Astreus</div>
-              <div className="text-xs text-white font-play font-semibold">Legal</div>
+              <div className="text-lg font-semibold font-play text-[#002346]">Astreus</div>
+              <div className="text-xs text-[#002346] font-play font-semibold">Legal</div>
             </div>
           </Link>
 
@@ -91,7 +91,7 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-10">
             <NavItem to="/">ABOUT</NavItem>
             <NavItem to="/expertise">EXPERTISE</NavItem>
-            <NavItem to="/peoplepage">PEOPLE</NavItem>
+          {/*   <NavItem to="/peoplepage">PEOPLE</NavItem> */}
             <NavItem to="/impact">IMPACT</NavItem>
             <NavItem to="/resources">RESOURCES</NavItem>
             <NavItem to="/careers">CAREERS</NavItem>
@@ -103,9 +103,9 @@ export default function Navbar() {
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? (
-              <X size={28} className="text-white" />
+              <X size={28} className="text-[#002346]" />
             ) : (
-              <Menu size={38} className="text-white" />
+              <Menu size={38} className="text-[#002346]" />
             )}
           </button>
         </div>

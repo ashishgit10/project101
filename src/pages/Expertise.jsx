@@ -9,16 +9,16 @@ export default function ExpertisePage() {
   const menu = [
     {
       title: "Practice Areas",
-      links: ["Corporate Law", "Litigation", "Arbitration"],
+      links: ["Corporate Law", "Criminal Litigation", "Matrimonial law","Banking and finance"],
     },
     {
       title: "Sectors",
       links: ["Banking & Finance", "Energy", "Technology"],
     },
-    {
+    /* {
       title: "Work Highlights",
       links: [], // direct link
-    },
+    }, */
   ];
 
   return (<>

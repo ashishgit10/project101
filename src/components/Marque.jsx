@@ -26,10 +26,10 @@ const Marque = () => {
                 ))}
             </Marquee>
         </div>
-        <section className="bg-[#0b2540] text-white relative w-full">
+        <section className="bg-[#0b2540] text-white relative">
             {/* ===================== Top Section ===================== */}
 
-            <div className="py-12 md:py-16  w-full">
+            <div className=" pt-12 md:max-w-1/2">
 
                 <div className="w-full px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row gap-10 lg:gap-0">
 
@@ -55,8 +55,8 @@ const Marque = () => {
                         </ul>
                     </div>
                     {/* RIGHT - Impact List */}
-                    <div className="relative border border-[#B6654C] p-6 sm:p-8 lg:p-10 flex-1 text-center order-2 lg:order-1">
-                        {/* Quote icon */}
+             {/*        <div className="relative border border-[#B6654C] p-6 sm:p-8 lg:p-10 flex-1 text-center order-2 lg:order-1">
+                    
                         <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#0b2540] px-4">
                             <img
                                 src={QuoteIcon}
@@ -65,7 +65,7 @@ const Marque = () => {
                             />
                         </div>
 
-                        {/* Quote text */}
+                  
                         <p className="text-[#9FD6B2] font-play italic text-2xl lg:text-3xl sm:text-lg md:text-xl leading-relaxed mb-6">
                             We need to reflect on how privileged we are as a profession, on
                             what we believe in as human beings. The fact is, someone else is
@@ -75,22 +75,22 @@ const Marque = () => {
                             Ajay Bahl, Co-Founder & Managing Partner
                         </p>
 
-                        {/* Decorative bottom right */}
+                
                         <img
                             src={Pattern}
                             alt="pattern"
                             className="absolute -bottom-8 sm:-bottom-10 right-0 w-20 sm:w-24 md:w-28 opacity-80"
                         />
-                    </div>
+                    </div> */}
 
 
                 </div>
             </div>
 
             {/* ===================== Careers Section ===================== */}
-            <div className="w-full px-4 sm:px-6 lg:px-12 py-12 md:py-16 flex flex-col lg:flex-row gap-10 lg:gap-12">
+            <div className="md:max-w-1/2 px-4 sm:px-6 lg:px-12 py-8 md:py-16 flex flex-col lg:flex-row gap-10 lg:gap-12">
                 {/* LEFT - Careers List */}
-                <div className="flex-1 lg:ml-52 ml-0 relative">
+                <div className="flex-1 lg:ml-32 ml-0 relative">
                     <h3 className="text-[#9FD6B2] font-play text-2xl sm:text-3xl font-semibold mb-6">
                         Careers
                     </h3>
@@ -116,8 +116,8 @@ const Marque = () => {
                 </div>
 
                 {/* RIGHT - Quote Box */}
-                <div className="relative border border-[#B6654C] p-6 sm:p-8 lg:p-10 flex-1 text-center">
-                    {/* Quote icon */}
+                {/* <div className="relative border border-[#B6654C] p-6 sm:p-8 lg:p-10 flex-1 text-center">
+                 
                     <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#0b2540] px-4">
                         <img
                             src={QuoteIcon}
@@ -126,7 +126,7 @@ const Marque = () => {
                         />
                     </div>
 
-                    {/* Quote text */}
+               
                     <p className="text-[#9FD6B2] font-play italic text-2xl lg:text-3xl sm:text-lg md:text-xl leading-relaxed mb-6">
                         We’re about honest conversations and greater collaboration between
                         the partners. We are mandated to share knowledge, and are less
@@ -137,7 +137,7 @@ const Marque = () => {
                         Zia J. Mody, Co-Founder & Managing Partner
                     </p>
 
-                </div>
+                </div> */}
             </div>
             <img
                 src={LeafPattern}
