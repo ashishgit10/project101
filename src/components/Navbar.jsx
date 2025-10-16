@@ -54,10 +54,10 @@ export default function Navbar() {
       title: "EXPERTISE",
       to: "/expertise", // 🔑 direct link
     },
-    {
+/*     {
       title: "PEOPLE",
       to: "/peoplepage",
-    },
+    }, */
     {
       title: "IMPACT",
       to: "/impact", // 🔑 direct link
