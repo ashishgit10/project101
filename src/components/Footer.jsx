@@ -52,9 +52,9 @@ const Footer = () => {
         {/* Back to top */}
         <button
           onClick={scrollToTop}
-          className="absolute right-6 top-6 md:static border border-[#004b87] rounded-full p-3 hover:bg-[#004b87] hover:text-white transition"
+          className="absolute right-6 top-6 md:static animate-bounce border text-xl border-[#004b87] rounded-full p-3 hover:bg-[#004b87] hover:text-white transition"
         >
-         {/*  <FaArrowUp className="text-[#004b87]" /> */}
+         {/*  <FaArrowUp className="text-[#004b87]" /> */}⬆️
         </button>
       </div>
 

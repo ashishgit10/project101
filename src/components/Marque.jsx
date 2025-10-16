@@ -1,14 +1,13 @@
-import React from "react";
+
 import Marquee from "react-fast-marquee"; // npm install react-fast-marquee
-import QuoteIcon from "../assets/quote.svg";
-import Pattern from "../assets/pattern2.png";
 import LeafPattern from "../assets/pattern5.png"; // replace with your leaf asset
 import arrow from "../assets/right-arrow-1.svg";
 // sample logos
 import Logo1 from "../assets/logo1.png";
 import Logo2 from "../assets/logo2.png";
-import Logo3 from "../assets/logo2.png";
-const logos = [Logo1, Logo2, Logo3, Logo1, Logo1];
+import Logo3 from "../assets/logo.jpeg";
+import Logo4 from "../assets/logo3.png";
+const logos = [Logo1, Logo2, Logo3, Logo4];
 
 const Marque = () => {
     return (<>
@@ -55,7 +54,7 @@ const Marque = () => {
                         </ul>
                     </div>
                     {/* RIGHT - Impact List */}
-             {/*        <div className="relative border border-[#B6654C] p-6 sm:p-8 lg:p-10 flex-1 text-center order-2 lg:order-1">
+                    {/*        <div className="relative border border-[#B6654C] p-6 sm:p-8 lg:p-10 flex-1 text-center order-2 lg:order-1">
                     
                         <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#0b2540] px-4">
                             <img

@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronRight, Plus, Minus } from "lucide-react";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 
 const NavItem = ({ to, children, onClick }) => (
   <NavLink
     to={to}
     className={({ isActive }) =>
-      "px-3 py-2 rounded-md text-sm font-medium " +
-      (isActive ? "text-[#002346]" : "text-[#002346] hover:text-[#aabf91]")
+      `group relative px-3 py-2 text-md font-medium transition-colors duration-300
+       ${isActive ? "text-[#002346]" : "text-[#002346] hover:text-[#c97b63]"}`
     }
     onClick={onClick}
   >
     {children}
+    {/* underline effect */}
+    <span
+      className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#002346] transition-all duration-300 group-hover:w-full"
+    ></span>
   </NavLink>
 );
 
@@ -78,12 +82,12 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 text-[#002346]  rounded flex items-center justify-center font-bold">
-              <img src={logo} className="rounded" alt="logo" />
+            <div className="w-10 h-10 text-[#002346] scale-150 rounded flex items-center justify-center font-bold">
+              <img src={logo} className="rounded w-24 h-10" alt="logo" />
             </div>
-            <div>
-              <div className="text-lg font-semibold font-play text-[#002346]">Astreus</div>
-              <div className="text-xs text-[#002346] font-play font-semibold">Legal</div>
+            <div className="flex flex-col ">
+              <p className="text-xl font-semibold font-play text-[#002346]">Astreus</p>
+              <p className="text-lg text-[#002346] font-play -mt-2 font-semibold">Legal</p>
             </div>
           </Link>
 
@@ -91,7 +95,7 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-10">
             <NavItem to="/">ABOUT</NavItem>
             <NavItem to="/expertise">EXPERTISE</NavItem>
-          {/*   <NavItem to="/peoplepage">PEOPLE</NavItem> */}
+            {/*   <NavItem to="/peoplepage">PEOPLE</NavItem> */}
             <NavItem to="/impact">IMPACT</NavItem>
             <NavItem to="/resources">RESOURCES</NavItem>
             <NavItem to="/careers">CAREERS</NavItem>

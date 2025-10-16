@@ -19,7 +19,7 @@ export default function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 1100) // 2 seconds
+    }, 1500) // 2 seconds
     return () => clearTimeout(timer)
   }, [])
 
@@ -31,7 +31,7 @@ export default function App() {
           alt="Astreus Legal"
           className="w-40 h-40 mb-4"
         />
-        <h1 className="text-2xl font-bold text-[#004b87]">
+        <h1 className="text-2xl font-play font-bold text-[#004b87]">
           Astreus Legal
         </h1>
       </div>
