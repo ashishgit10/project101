@@ -1,5 +1,4 @@
-import React from "react";
-import Logo from "../assets/logo1.png"; // your logo
+
 import Linkedin from "../assets/linkedin.png";
 import Rss from "../assets/icon-rss.svg";
 import Whatsapp from "../assets/whatsapp-icon.png";

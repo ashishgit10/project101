@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./timeline.css"; // custom CSS animations
-import Section1 from "../components/Section1";
+
 import SpotlightSection from "../components/SpotlightSection";
 import Timeline2 from "../components/Timeline2";
 import People from "../components/People";

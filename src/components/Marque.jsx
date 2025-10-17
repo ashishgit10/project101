@@ -2,12 +2,9 @@
 import Marquee from "react-fast-marquee"; // npm install react-fast-marquee
 import LeafPattern from "../assets/pattern5.png"; // replace with your leaf asset
 import arrow from "../assets/right-arrow-1.svg";
-// sample logos
-import Logo1 from "../assets/logo1.png";
-import Logo2 from "../assets/logo2.png";
 import Logo3 from "../assets/logo.jpeg";
-import Logo4 from "../assets/logo3.png";
-const logos = [Logo3, Logo3, Logo3, Logo3, Logo3];
+
+const logos = [Logo3, Logo3, Logo3, Logo3, Logo3, Logo3, Logo3, Logo3];
 
 const Marque = () => {
     return (<>
