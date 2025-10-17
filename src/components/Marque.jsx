@@ -7,7 +7,7 @@ import Logo1 from "../assets/logo1.png";
 import Logo2 from "../assets/logo2.png";
 import Logo3 from "../assets/logo.jpeg";
 import Logo4 from "../assets/logo3.png";
-const logos = [Logo1, Logo2, Logo3, Logo4];
+const logos = [Logo3, Logo3, Logo3, Logo3, Logo3];
 
 const Marque = () => {
     return (<>
