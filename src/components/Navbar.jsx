@@ -60,16 +60,16 @@ export default function Navbar() {
     }, */
     {
       title: "IMPACT",
-      to: "/impact", // 🔑 direct link
+      to: "/impact", //  direct link
     },
     {
       title: "RESOURCES",
-      to: "/resources", // 🔑 direct link
+      to: "/resources", //  direct link
     },
-    {
+  /*   {
       title: "CAREERS",
-      to: "/careers", // 🔑 direct link
-    },
+      to: "/careers", // direct link
+    }, */
   ];
 
   return (
@@ -98,7 +98,7 @@ export default function Navbar() {
             {/*   <NavItem to="/peoplepage">PEOPLE</NavItem> */}
             <NavItem to="/impact">IMPACT</NavItem>
             <NavItem to="/resources">RESOURCES</NavItem>
-            <NavItem to="/careers">CAREERS</NavItem>
+          
           </nav>
 
           {/* Mobile Hamburger */}

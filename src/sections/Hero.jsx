@@ -35,16 +35,16 @@ const Hero = () => {
 
       <main className="relative z-10">
         {/* Spotlight Section */}
-        <section className="bg-[#002346]">
+        <section className="bg-[#002346] ">
           <SpotlightSection />
         </section>
 
         {/* Timeline Section */}
-        <section className="bg-white flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      {/*   <section className="bg-white flex items-center justify-center px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-7xl">
             <Timeline2 />
           </div>
-        </section>
+        </section> */}
 
         {/* People Section */}
         <section className="bg-white flex items-center justify-center">
@@ -66,9 +66,9 @@ const Hero = () => {
         </section>
 
         {/* Marquee Section */}
-        <section className="bg-gray-100">
+      {/*   <section className="bg-gray-100">
           <Marque />
-        </section>
+        </section> */}
 
         {/* Footer Section */}
         <section className="bg-gray-100">

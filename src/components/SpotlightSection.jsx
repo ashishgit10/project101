@@ -93,7 +93,6 @@ const SpotlightSection = () => {
         </div>
       </div>
 
-      {/* ✅ Mobile Vertical Layout */}
       <div className="w-full px-6 pb-10 pt-36 space-y-10 lg:hidden overflow-y-auto">
         {items.map((item, index) => (
           <div key={index}>
@@ -112,24 +111,22 @@ const SpotlightSection = () => {
         </div>
       </div>
 
-      {/* ✅ Spotlight Section */}
-      <section
+    {/*   <section
         ref={sectionRef}
         className={`py-24 flex flex-col lg:pt-12 px-6 transition-colors duration-700 ${
           scrolled ? "bg-white" : "bg-[#b0c999]"
         }`}
       >
         <div className="w-full max-w-7xl mx-auto flex flex-col">
-          {/* Heading */}
+        
           <div className="hidden md:flex w-[10%] border-b border-[#c97b63] pb-8">
             <h2 className="text-[#c97b63] text-md md:text-xl uppercase font-bold tracking-wide">
               Spotlight
             </h2>
           </div>
 
-          {/* Content Columns */}
           <div className="flex flex-col md:flex-row justify-between py-8">
-            {/* Left */}
+       
             <div className="md:w-1/2 md:pr-8 mb-6 md:mb-0">
               <p className="mb-4 text-md md:text-xl text-cyan-950">
                 We are delighted to announce that our Banking & Finance, Capital
@@ -145,7 +142,7 @@ const SpotlightSection = () => {
               </p>
             </div>
 
-            {/* Right */}
+ 
             <div className="md:w-1/2 md:pl-8">
               <p className="text-md md:text-xl text-cyan-950">
                 Senior Partners, Agnik Bhattacharyya, Anand Shah, Anil Kasturi,
@@ -160,7 +157,6 @@ const SpotlightSection = () => {
             </div>
           </div>
 
-          {/* View Rankings Button */}
           <div className="w-full relative flex justify-center">
             <img src={pat} className="absolute hidden lg:block w-52 left-0" alt="" />
             <button className="mt-8 border text-lg border-[#004b87] font-bold text-[#004b87] px-5 py-2 rounded hover:bg-[#004b87] hover:text-white transition">
@@ -168,7 +164,7 @@ const SpotlightSection = () => {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

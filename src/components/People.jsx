@@ -1,11 +1,8 @@
-import React from "react";
-
 import Person1 from "../assets/Aniket_Singh.jpeg";
 import Person2 from "../assets/Ashish_Chaudhary.jpeg";
 import Person3 from "../assets/Isha_Baloni.jpeg";
 import Person4 from "../assets/Sreeraj_Prabhakaran_K.jpeg";
-import Pattern from "../assets/pattern2.png";
-import qot from "../assets/quote.svg";
+
 
 const people = [
   { name: "Aniket Singh", image: Person1 },
@@ -16,12 +13,11 @@ const people = [
 
 const People = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-10">
+    <section className="max-w-7xl mx-auto px-5 sm:px-6 sm:py-10 py-10">
       <h3 className="text-[#004b87] text-2xl md:text-3xl font-play font-semibold mb-8 text-center md:text-left">
         The People <br /> of Astreus Legal
       </h3>
 
-      {/* ✅ Horizontal People Section */}
       <div className="flex flex-wrap justify-center gap-10 md:gap-16">
         {people.map((person, index) => (
           <div
@@ -45,9 +41,6 @@ const People = () => {
 
         ))}
       </div>
-
-      {/* ✅ Bottom Button */}
-
     </section>
   );
 };

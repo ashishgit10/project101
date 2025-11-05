@@ -9,7 +9,7 @@ export default function Impact() {
   const menu = [
     {
       title: "Purpose",
-      links: ["Corporate Law", "Litigation", "Arbitration"],
+      links: ["Corporate Law", "Litigation", "Arbitration","Matrimonial law","Banking and Finance"],
     },
     {
       title: "History",
@@ -28,16 +28,15 @@ export default function Impact() {
     <div className="bg-[#fdf9f3] min-h-screen flex flex-col justify-between">
       {/* Expertise Section */}
       <section className="flex flex-col md:flex-row px-6 md:px-48 pb-16 pt-40 gap-12 flex-1">
-        {/* Left Side */}
-        <div className="flex-1">
+       
+       {/*  <div className="flex-1">
           <h2 className="text-4xl font-light font-play text-[#a45c48] leading-snug mb-6">
             Our undertakings for long-term impact are an organic extension of our purpose.
           </h2>
           <p className="text-[#002346] leading-relaxed text-lg">
             They are to employ our deep knowledge of the law beyond the business, the transaction, the deal. To use the opportunities and skills we possess, to reflect on the culture we’re creating. Individually and collectively, these are our efforts to help shape the thinking of our future generations, and arm them with strategies for true, sustainable growth.          </p>
-        </div>
+        </div> */}
 
-        {/* Right Side Dropdown Menu */}
         <div className="flex-1 max-w-lg">
           {menu.map((item, index) => (
             <div key={index} className="border-b border-gray-300 py-4">
@@ -63,7 +62,7 @@ export default function Impact() {
                 )}
               </div>
 
-              {/* Dropdown Content with animation */}
+     
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index
                   ? "max-h-40 opacity-100 mt-3"

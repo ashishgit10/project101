@@ -29,13 +29,13 @@ export default function Resource() {
       {/* Expertise Section */}
       <section className="flex flex-col md:flex-row px-6 md:px-48 pb-16 pt-40 gap-12 flex-1">
         {/* Left Side */}
-        <div className="flex-1">
+        {/*  <div className="flex-1">
           <h2 className="text-4xl font-light font-play text-[#a45c48] leading-snug mb-6">
             Knowledge-sharing is intrinsic to equity and inclusivity.
           </h2>
           <p className="text-[#002346] leading-relaxed text-lg">
             This is a repository of thought leadership, deep insights and strong viewpoints, legal and other news and events and how they impact the industry and our clients.             </p>
-        </div>
+        </div> */}
 
         {/* Right Side Dropdown Menu */}
         <div className="flex-1 max-w-lg">
@@ -114,7 +114,7 @@ export default function Resource() {
             rel="noopener noreferrer"
             className="hover:text-blue-600"
           >
-            <img src={linkedin} className="w-4"/>
+            <img src={linkedin} className="w-4" />
           </a>
           <a
             href="#rss"

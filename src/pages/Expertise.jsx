@@ -29,7 +29,7 @@ export default function ExpertisePage() {
       {/* Expertise Section */}
       <section className="flex flex-col md:flex-row px-6 lg:px-48 pb-16 pt-40 gap-12 flex-1">
         {/* Left Side */}
-        <div className="flex-1">
+       {/*  <div className="flex-1">
           <h2 className="text-4xl font-light font-play text-[#a45c48] leading-snug mb-6">
             Deep sectoral expertise <br /> across services and industries.
           </h2>
@@ -39,7 +39,7 @@ export default function ExpertisePage() {
             industries. We engage not just individual businesses, but also
             contribute to the country’s legal and regulatory frameworks.
           </p>
-        </div>
+        </div> */}
 
         {/* Right Side Dropdown Menu */}
         <div className="flex-1 max-w-lg">
@@ -120,12 +120,12 @@ export default function ExpertisePage() {
           >
             <img src={linkedin} className="w-4" />
           </a>
-          <a
+         {/*  <a
             href="#rss"
             className="hover:text-blue-600"
           >
             <span className="text-xl">📰</span>
-          </a>
+          </a> */}
         </div>
       </footer>
     </div>
