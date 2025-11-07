@@ -44,15 +44,11 @@ export default function Navbar() {
   const menuItems = [
     {
       title: "ABOUT",
-      links: [
-        { label: "Purpose", to: "/purpose" },
-        { label: "History", to: "/history" },
-        { label: "Awards & Rankings", to: "/awards" },
-      ],
+      to:"/"
     },
     {
       title: "EXPERTISE",
-      to: "/expertise", // 🔑 direct link
+      to: "/expertise", //  direct link
     },
 /*     {
       title: "PEOPLE",
