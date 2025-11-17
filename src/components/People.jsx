@@ -1,15 +1,7 @@
-import Person1 from "../assets/Aniket_Singh.jpeg";
-import Person2 from "../assets/Ashish_Chaudhary.jpeg";
-import Person3 from "../assets/Isha_Baloni.jpeg";
-import Person4 from "../assets/Sreeraj_Prabhakaran_K.jpeg";
+import { Link } from "react-router-dom";
+import people from "./Data/people.js";
 
-
-const people = [
-  { name: "Aniket Singh", image: Person1 },
-  { name: "Isha Baloni", image: Person3 },
-  { name: "Sreeraj Prabhakaran K", image: Person4 },
-  { name: "Ashish Chaudhary", image: Person2 },
-];
+import "../global.css"
 
 const People = () => {
   return (
@@ -33,9 +25,11 @@ const People = () => {
               Adv. {person.name}
             </p>
             <div className="text-center mt-10">
-              <button className="border border-[#004b87] text-[#004b87] font-bold px-6 py-3 rounded hover:bg-[#004b87] hover:text-white transition">
-                View Profile
-              </button>
+              <Link to={`/advocate/${person.id}`}>
+                <button className="btn-border-reveal font-bold px-4 py-2 rounded transition">
+                  View Profile
+                </button>
+              </Link>
             </div>
           </div>
 

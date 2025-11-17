@@ -1,0 +1,27 @@
+.btn-border-reveal {
+  background-color: transparent;
+  color: #004b87;
+  border: 2px solid #004b87;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-border-reveal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0;
+  height: 100%;
+  background-color: #004b87;
+  transition: width 0.3s ease;
+  z-index: -1; /* behind text, inside button */
+}
+
+.btn-border-reveal:hover::after {
+  width: 100%;
+}
+
+.btn-border-reveal:hover {
+  color: white;
+}

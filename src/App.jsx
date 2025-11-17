@@ -10,6 +10,7 @@ import Resource from "./pages/Resource";
 import logo from "./assets/logo.jpeg";
 import NotFound from "./pages/NotFound";
 import ExpertiseDetailPage from "./pages/expertiseDesc/ExpertiseDetailPage";
+import PeopleProfile from "./components/PeopleProfile";
 
 export default function App() {
   const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/impact" element={<Impact />} />
           <Route path="/resources" element={<Resource />} />
             <Route path="/expertise/details" element={<ExpertiseDetailPage />} />
+                  <Route path="/advocate/:id" element={<PeopleProfile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
