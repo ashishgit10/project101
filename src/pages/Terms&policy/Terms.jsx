@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import { ArrowLeft } from "lucide-react";
 import Footer from "../../components/Footer";
+import { useEffect } from "react";
 
 export default function Terms() {
   const location = useLocation();
