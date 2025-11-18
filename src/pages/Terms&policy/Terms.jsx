@@ -7,7 +7,9 @@ export default function Terms() {
   const location = useLocation();
   const navigate = useNavigate();
   const data = location.state; // { title, desc, path }
-
+ useEffect(() => {
+        window.scrollTo({ top: 0, });
+    }, [])
   if (!data) {
     // fallback if someone opens the detail page directly
     return (
