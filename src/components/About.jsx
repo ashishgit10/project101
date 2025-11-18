@@ -8,7 +8,7 @@ const About = () => {
         {/* LEFT - Decorative Image */}
 
         {/* MIDDLE - Text Content */}
-        <div className="flex flex-col text-center p-11 justify-around md:text-left">
+        <div className="flex flex-col text-center  justify-around md:text-left">
           <h2 className="text-[#004b87] text-2xl md:text-3xl font-semibold mb-4">
             About
           </h2>
