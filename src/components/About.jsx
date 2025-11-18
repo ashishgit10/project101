@@ -12,7 +12,10 @@ const About = () => {
           <h2 className="text-[#004b87] text-2xl md:text-3xl font-semibold mb-4">
             About
           </h2>
-          <p className="text-[#002b45] text-base md:text-lg leading-relaxed">
+          <p className="text-[#002b45] text-base md:text-lg  
+  font-[400]
+  whitespace-pre-line 
+  text-justify leading-relaxed">
             Founded in 2025, ASTREUS LEGAL is a contemporary law firm built on the principles of precision, integrity, and unwavering client commitment. The firm brings together a team of dynamic legal professionals dedicated to delivering strategic, solution-driven, and ethically grounded representation across diverse practice areas.
             With core strengths in Criminal Litigation, Civil Law, Matrimonial Disputes, and Banking & Finance, ASTREUS LEGAL blends rigorous legal analysis with a practical, result-oriented approach. Every matter is handled with meticulous preparation, clear strategy, and a deep understanding of the personal and commercial realities clients face.
             What sets the firm apart is its client-centric philosophy. ASTREUS LEGAL prioritises transparent communication, personalised attention, and tailored legal solutions that reflect the unique needs of each case. Whether dealing with complex criminal proceedings, sensitive matrimonial disputes, intricate civil matters, or financially significant banking issues, the firm ensures that every client receives guidance grounded in both compassion and competence.

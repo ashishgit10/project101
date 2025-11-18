@@ -3,6 +3,7 @@ import { ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import linkedin from "../assets/linkedin.png";
+import Footer from "../components/Footer";
 
 export default function ExpertisePage() {
   const navigate = useNavigate();
@@ -44,6 +45,12 @@ export default function ExpertisePage() {
       path: "/expertise/details",
       shortdesc: "Support in negotiating and settling outstanding loans to protect client assets and interests."
     },
+    {
+      title: "Mining Laws",
+      desc: `Astreus Legal Associates LLP offers focused legal assistance in mining law, covering compliance and advisory under the Mines and Minerals (Development and Regulation) Act, 1957, and related rules. We handle mining lease matters, licensing, royalty issues, environmental and forest clearance requirements, and disputes before regulatory authorities. Our team provides practical, industry-aligned solutions to ensure smooth mining operations and adherence to all statutory obligations.`,
+      path: "/expertise/details",
+      shortdesc: "Legal assistance in mining compliance, licensing, leases, and regulatory clearances.",
+    }
   ];
 
   return (
@@ -85,23 +92,8 @@ export default function ExpertisePage() {
         </section>
 
         {/* Footer */}
-        <footer className="flex justify-between items-center px-6 md:px-16 py-6 border-t border-gray-300 text-sm">
-          <div className="flex flex-wrap gap-6 text-[#002346] font-medium">
-            <a href="/contact" className="hover:text-blue-600">
-              Contact
-            </a>
-          </div>
-
-          <div className="flex gap-4 items-center text-[#002346] font-medium">
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-600"
-            >
-              <img src={linkedin} className="w-5" alt="LinkedIn" />
-            </a>
-          </div>
+        <footer>
+          <Footer />
         </footer>
       </div>
     </>

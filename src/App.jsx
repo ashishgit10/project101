@@ -11,6 +11,7 @@ import logo from "./assets/logo.jpeg";
 import NotFound from "./pages/NotFound";
 import ExpertiseDetailPage from "./pages/expertiseDesc/ExpertiseDetailPage";
 import PeopleProfile from "./components/PeopleProfile";
+import Terms from "./pages/Terms&policy/Terms";
 
 export default function App() {
   const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
@@ -52,9 +53,10 @@ export default function App() {
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/peoplepage" element={<PeoplePage />} />
           <Route path="/impact" element={<Impact />} />
-          <Route path="/resources" element={<Resource />} />
+       {/*    <Route path="/resources" element={<Resource />} /> */}
             <Route path="/expertise/details" element={<ExpertiseDetailPage />} />
                   <Route path="/advocate/:id" element={<PeopleProfile />} />
+                    <Route path="/info" element={<Terms />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

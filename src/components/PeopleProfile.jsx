@@ -2,12 +2,15 @@ import { useParams } from "react-router-dom";
 import peopleData from "./Data/people.js";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
+import { useEffect } from "react";
 
 export default function PeopleProfile() {
     const { id } = useParams();
 
     const person = peopleData.find((p) => p.id === id);
-
+    useEffect(() => {
+        window.scrollTo({ top: 0, });
+    }, [])
     if (!person) {
         return <h2 className="text-center py-10 text-red-600">Profile not found</h2>;
     }
