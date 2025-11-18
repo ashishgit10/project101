@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import pat from "../assets/pattern-1.png";
+
 
 const SpotlightSection = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -39,10 +39,10 @@ const SpotlightSection = () => {
       <div className="relative w-full flex justify-center items-center py-10 hidden lg:flex">
         <div className="w-[90%] max-w-7xl relative md:mt-10 flex items-start justify-between">
           {/* Horizontal line (centered full width) */}
-          <div className="absolute top-[10px] left-32 right-96 h-[1px] bg-white/30" />
+          <div className="absolute top-[10px] left-32 right-[315px] h-[1px] bg-white/30" />
 
           {/* Timeline items */}
-          <div className="flex justify-between w-full pr-44">
+          <div className="flex justify-between w-full">
             {items.map((item, index) => (
               <div
                 key={index}
@@ -85,7 +85,7 @@ const SpotlightSection = () => {
           </div>
 
           {/* ✅ Unmatched perfectly aligned to right end */}
-          <div className="flex items-center justify-center pl-10 border-t border-b border-white/30 h-full">
+          <div className="flex items-center justify-center border-t border-b border-white/30 h-full">
             <h2 className="text-4xl font-semibold text-[#c97b63] py-2">
               Unmatched
             </h2>

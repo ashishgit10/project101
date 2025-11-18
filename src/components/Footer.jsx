@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import instagram from "../assets/instagram.png";
+import insta from "../assets/instagram.png";
 import gmail from "../assets/gmail.png";
 import Whatsapp from "../assets/whatsapp-icon.png";
 
@@ -63,7 +63,7 @@ const Footer = () => {
           <h4 className="font-semibold mb-3">Connect</h4>
           <div className="flex gap-4 items-center">
             <a href="https://www.instagram.com/astreuslegal?igsh=MXBtbHl4MG56Zmc5eQ==" target="_blank" rel="noopener noreferrer">
-              <img src={instagram} alt="instagram" className="w-6 h-6" />
+              <img src={insta} alt="instagram" className="w-6 h-6" />
             </a>
 
             <a href="mailto:astreuslegal@gmail.com">
