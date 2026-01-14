@@ -39,7 +39,7 @@ export default function App() {
   return (
     <div>
       <main className="flex-grow">
-        {!acceptedDisclaimer && (
+      {/*   {!acceptedDisclaimer && (
           <DisclaimerModal
             onAccept={() => {
               setAcceptedDisclaimer(true);
@@ -47,7 +47,7 @@ export default function App() {
             }}
             onClose={() => setAcceptedDisclaimer(true)}
           />
-        )}
+        )} */}
         <Routes>
 {/*           <Route path="/" element={<Home />} />
           <Route path="/expertise" element={<Expertise />} />
