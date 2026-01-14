@@ -14,7 +14,7 @@ import PeopleProfile from "./components/PeopleProfile";
 import Terms from "./pages/Terms&policy/Terms";
 
 export default function App() {
-  const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
+/*   const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
     () => localStorage.getItem("acceptedDisclaimer") === "true"
   );
 
@@ -35,7 +35,7 @@ export default function App() {
       </div>
     );
   }
-
+ */
   return (
     <div>
       <main className="flex-grow">
