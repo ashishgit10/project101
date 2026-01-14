@@ -49,14 +49,13 @@ export default function App() {
           />
         )}
         <Routes>
-          <Route path="/" element={<Home />} />
+{/*           <Route path="/" element={<Home />} />
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/peoplepage" element={<PeoplePage />} />
           <Route path="/impact" element={<Impact />} />
-       {/*    <Route path="/resources" element={<Resource />} /> */}
-            <Route path="/expertise/details" element={<ExpertiseDetailPage />} />
+                  <Route path="/expertise/details" element={<ExpertiseDetailPage />} />
                   <Route path="/advocate/:id" element={<PeopleProfile />} />
-                    <Route path="/info" element={<Terms />} />
+                    <Route path="/info" element={<Terms />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
