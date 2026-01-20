@@ -44,7 +44,7 @@ export default function App() {
             onAccept={() => {
               setAcceptedDisclaimer(true);
               localStorage.setItem("acceptedDisclaimer", "true");
-            }}
+            }}``
             onClose={() => setAcceptedDisclaimer(true)}
           />
         )} */}
