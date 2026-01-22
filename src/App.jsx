@@ -14,7 +14,7 @@ import PeopleProfile from "./components/PeopleProfile";
 import Terms from "./pages/Terms&policy/Terms";
 
 export default function App() {
-/*   const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
+  const [acceptedDisclaimer, setAcceptedDisclaimer] = useState(
     () => localStorage.getItem("acceptedDisclaimer") === "true"
   );
 
@@ -35,27 +35,27 @@ export default function App() {
       </div>
     );
   }
- */
+
   return (
     <div>
       <main className="flex-grow">
-      {/*   {!acceptedDisclaimer && (
+        {!acceptedDisclaimer && (
           <DisclaimerModal
             onAccept={() => {
               setAcceptedDisclaimer(true);
               localStorage.setItem("acceptedDisclaimer", "true");
-            }}``
+            }}
             onClose={() => setAcceptedDisclaimer(true)}
           />
-        )} */}
+        )}
         <Routes>
-{/*           <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/expertise" element={<Expertise />} />
           <Route path="/peoplepage" element={<PeoplePage />} />
           <Route path="/impact" element={<Impact />} />
-                  <Route path="/expertise/details" element={<ExpertiseDetailPage />} />
-                  <Route path="/advocate/:id" element={<PeopleProfile />} />
-                    <Route path="/info" element={<Terms />} /> */}
+          <Route path="/expertise/details" element={<ExpertiseDetailPage />} />
+          <Route path="/advocate/:id" element={<PeopleProfile />} />
+          <Route path="/info" element={<Terms />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
