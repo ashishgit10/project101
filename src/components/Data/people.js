@@ -2,13 +2,15 @@ import Person1 from "../../assets/Aniket_Singh.jpeg";
 import Person2 from "../../assets/Ashish_Chaudhary.jpeg";
 import Person3 from "../../assets/Isha_Baloni.jpeg";
 import Person4 from "../../assets/Sreeraj_Prabhakaran_K.jpeg";
+import Person5 from "../../assets/Pawan-kumar.jpeg";
+
 
 const peopleData = [
   {
     id: "aniket-singh",
     name: "Aniket Singh",
     image: Person1,
-    description:`Aniket Singh is a distinguished legal professional with a strong academic foundation, holding an LL.M.in Criminal Law, complemented by extensive practical experience across multiple domains of litigation.With a refined specialisation in Criminal Law, he has handled a wide range of matters, including bail proceedings, quashing petitions, criminal trials, and complex inquiries involving serious offences.His consistent exposure to diverse criminal cases has strengthened his analytical depth, strategic clarity, and courtroom proficiency.
+    description: `Aniket Singh is a distinguished legal professional with a strong academic foundation, holding an LL.M.in Criminal Law, complemented by extensive practical experience across multiple domains of litigation.With a refined specialisation in Criminal Law, he has handled a wide range of matters, including bail proceedings, quashing petitions, criminal trials, and complex inquiries involving serious offences.His consistent exposure to diverse criminal cases has strengthened his analytical depth, strategic clarity, and courtroom proficiency.
 
       He has gained invaluable experience working in the Supreme Court of India, where he has assisted in and independently managed matters of significant legal complexity.His work at the apex court has enhanced his expertise in drafting, research, and the art of persuasive argumentation, shaping him into a lawyer with both precision and poise.In addition to criminal litigation, Aniket Singh possesses hands- on experience in consumer disputes, arbitration, and mediation, allowing him to effectively represent clients in both adversarial and collaborative legal settings.Known for his meticulous preparation and solution - oriented approach, he focuses on delivering results through clear strategy, sound legal reasoning, and dedicated representation.
       `,
@@ -40,6 +42,22 @@ const peopleData = [
       
       Ashish Chaudhary has represented clients before various forums and authorities, offering guidance on banking regulations, RBI directives, recovery processes, and settlement frameworks. His hands-on experience enables him to handle sensitive financial disputes with professionalism, discretion, and a deep understanding of the regulatory environment.Known for his methodical approach and strong negotiating skills, he consistently strives to secure favourable settlements while protecting the long-term interests of his clients. His advisory work extends to drafting and reviewing financial agreements, providing compliance support, and assisting clients in understanding their legal and contractual obligations within the banking sector0.`,
   },
+  {
+    id: "Pawan-Kumar-Singh",
+    name: "Pawan Kumar Singh",
+    image: Person5,
+    description:
+      `Pawan Kumar Singh is a criminal defence advocate known for his focused work in bail matters, POCSO cases, JJ Act proceedings, constitutional challenges, medical negligence, and complex criminal litigation. He is associated with Dr. Abhishek Atrey, Advocate-on-Record, Supreme Court of India, and is actively engaged in matters before the Supreme Court and various High Courts, particularly those involving personal liberty and procedural safeguards.
+
+His practice includes drafting and assisting in SLPs (Civil & Criminal), Transfer Petitions, and statutory proceedings, including cases under the NI Act. With a strong command over legal research and case strategy, he contributes to matters that demand precision, urgency, and constitutional sensitivity—especially bail jurisprudence and rights-based criminal defence.
+Beyond courtroom litigation, he advises Ed-Tech companies on legal compliance, regulatory frameworks, policy structuring, and the handling of legal notices and statutory communications, bridging litigation insight with preventive legal strategy.
+
+Academically distinguished, he holds an LL.B. (Grade A), a Master’s degree in Criminology (1st Rank), and a B.A. (Hons.) in English Literature. His criminology and forensic background strengthens his defence in cases involving child offences, medical evidence, and investigative lapses.
+
+He has been invited as a guest speaker, featured as a subject expert in professional podcasts, participated in international conferences on Police Science, and contributed to a scholarly publication under the patronage of Hon’ble Justice Dipak Misra, Former Chief Justice of India.
+Recognised for clarity, preparation, and a rights-driven approach, Pawan Kumar Singh delivers defence advocacy that is strategic, research-backed, and uncompromising on liberty.`,
+  },
 ];
+
 
 export default peopleData;
