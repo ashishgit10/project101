@@ -14,9 +14,7 @@ const NavItem = ({ to, children, onClick }) => (
   >
     {children}
     {/* underline effect */}
-    <span
-      className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#002346] transition-all duration-300 group-hover:w-full"
-    ></span>
+    <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#002346] transition-all duration-300 group-hover:w-full"></span>
   </NavLink>
 );
 
@@ -44,13 +42,13 @@ export default function Navbar() {
   const menuItems = [
     {
       title: "ABOUT",
-      to:"/"
+      to: "/",
     },
     {
       title: "EXPERTISE",
       to: "/expertise", //  direct link
     },
-/*     {
+    /*     {
       title: "PEOPLE",
       to: "/peoplepage",
     }, */
@@ -58,11 +56,11 @@ export default function Navbar() {
       title: "IMPACT",
       to: "/impact", //  direct link
     },
-  /*   {
+    /*   {
       title: "RESOURCES",
       to: "/resources", //  direct link
     }, */
-  /*   {
+    /*   {
       title: "CAREERS",
       to: "/careers", // direct link
     }, */
@@ -72,8 +70,9 @@ export default function Navbar() {
     <>
       {/* Navbar */}
       <header
-        className={`fixed top-0 left-0 w-full text-[#002346] bg-white z-50 transition-transform duration-500 ${showNav ? "translate-y-0" : "-translate-y-full"
-          }`}
+        className={`fixed top-0 left-0 w-full text-[#002346] bg-white z-50 transition-transform duration-500 ${
+          showNav ? "translate-y-0" : "-translate-y-full"
+        }`}
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
           {/* Logo */}
@@ -82,8 +81,12 @@ export default function Navbar() {
               <img src={logo} className="rounded w-24 h-10" alt="logo" />
             </div>
             <div className="flex flex-col ">
-              <p className="text-xl font-semibold font-play text-[#002346]">Astreus</p>
-              <p className="text-lg text-[#002346] font-play -mt-2 font-semibold">Legal</p>
+              <p className="text-xl font-semibold font-play text-[#002346]">
+                Astreus
+              </p>
+              <p className="text-lg text-[#002346] font-play -mt-2 font-semibold">
+                Legal
+              </p>
             </div>
           </Link>
 
@@ -93,8 +96,7 @@ export default function Navbar() {
             <NavItem to="/expertise">EXPERTISE</NavItem>
             {/*   <NavItem to="/peoplepage">PEOPLE</NavItem> */}
             <NavItem to="/impact">IMPACT</NavItem>
-       {/*      <NavItem to="/resources">RESOURCES</NavItem> */}
-          
+            {/*      <NavItem to="/resources">RESOURCES</NavItem> */}
           </nav>
 
           {/* Mobile Hamburger */}
@@ -113,8 +115,9 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-white z-40 transform transition-transform duration-700 ease-in-out ${mobileOpen ? "translate-y-0" : "-translate-y-full"
-          }`}
+        className={`fixed top-0 left-0 w-full h-screen bg-white z-40 transform transition-transform duration-700 ease-in-out ${
+          mobileOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
       >
         <div className="flex flex-col h-full overflow-y-auto px-3 pb-10 pt-24 space-y-6 text-lg font-medium">
           {menuItems.map((menu, index) => (
