@@ -34,7 +34,7 @@ export default function PeopleProfile() {
         </div>
 
         <p
-          className="  text-gray-700 mt-6
+          className="  text-white mt-6
   text-lg 
   leading-relaxed 
   font-[400]
