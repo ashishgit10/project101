@@ -1,5 +1,5 @@
 import React from 'react'
-import notebook from "../../assets/logo.jpeg";
+import notebook from "../../assets/logo.png";
 import "../../global.css"
 function YAstreus() {
   return (
@@ -20,7 +20,7 @@ function YAstreus() {
                   Clarity in complexity.
                 </h2>
               </div>
-              <div className="m-7 border-l border-[#506079] pl-6 sm:pl-10">
+              <div className="m-7 border-l  border-[#506079] pl-6 sm:pl-10">
                 {[
                   [
                     "⚖",
@@ -50,7 +50,7 @@ function YAstreus() {
                     <i className="text-xl not-italic text-[#bd9154]">{icon}</i>
                     <div>
                       <b className="text-[9px] tracking-[.18em]">{title}</b>
-                      <p className="mt-1 text-[10px] leading-snug">{copy}</p>
+                      <p className="mt-1 text-[10px]  text-[#002346] leading-snug">{copy}</p>
                     </div>
                   </div>
                 ))}

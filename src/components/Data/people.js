@@ -1,6 +1,6 @@
-import Person1 from "../../assets/Aniket_Singh.jpeg";
+import Person1 from "../../assets/Aniket_Singh2.jpeg";
 import Person2 from "../../assets/Ashish_Chaudhary.jpeg";
-import Person3 from "../../assets/Isha_Baloni.jpeg";
+import Person3 from "../../assets/Isha_Baloni2.jpeg";
 import Person4 from "../../assets/Sreeraj_Prabhakaran_K.jpeg";
 import Person5 from "../../assets/Pawan-kumar.jpeg";
 
@@ -10,9 +10,11 @@ const peopleData = [
     id: "aniket-singh",
     name: "Aniket Singh",
     image: Person1,
-    description: `Aniket Singh is a distinguished legal professional with a strong academic foundation, holding an LL.M.in Criminal Law, complemented by extensive practical experience across multiple domains of litigation.With a refined specialisation in Criminal Law, he has handled a wide range of matters, including bail proceedings, quashing petitions, criminal trials, and complex inquiries involving serious offences.His consistent exposure to diverse criminal cases has strengthened his analytical depth, strategic clarity, and courtroom proficiency.
-
-      He has gained invaluable experience working in the Supreme Court of India, where he has assisted in and independently managed matters of significant legal complexity.His work at the apex court has enhanced his expertise in drafting, research, and the art of persuasive argumentation, shaping him into a lawyer with both precision and poise.In addition to criminal litigation, Aniket Singh possesses hands- on experience in consumer disputes, arbitration, and mediation, allowing him to effectively represent clients in both adversarial and collaborative legal settings.Known for his meticulous preparation and solution - oriented approach, he focuses on delivering results through clear strategy, sound legal reasoning, and dedicated representation.
+    description: `Aniket Singh is an advocate enrolled with the Bar Council of Delhi and an esteemed member of the Delhi High Court Bar Association. He holds an LL.M. in Criminal Law and has three years of professional experience in criminal litigation and dispute resolution. He has appeared before the Supreme Court of India, Delhi High Court, various District and Sessions Courts, and the National Consumer Disputes Redressal Commission (NCDRC), while also handling matters through arbitration and mediation.
+His practice is primarily focused on criminal law, encompassing bail and anticipatory bail proceedings, quashing petitions, criminal trials, and matters involving serious offences. His experience across different stages of criminal proceedings has shaped a disciplined approach to legal research, factual analysis, drafting, case preparation, and courtroom advocacy.
+Aniket has worked with the Standing Counsel for the States of Madhya Pradesh and Odisha, gaining exposure to matters involving government institutions and complex questions of law. His experience before the Supreme Court and Delhi High Court has further developed his understanding of appellate litigation, constitutional questions, procedural strategy, and persuasive advocacy.
+Alongside criminal litigation, he has handled consumer disputes, arbitration, and mediation, allowing him to advise and represent clients across diverse forms of dispute resolution. His approach is grounded in meticulous preparation, rigorous legal analysis, and a clear understanding of the legal and strategic considerations underlying each matter.
+As the Founder of Astreus Legal, Aniket is committed to building a practice founded on rigorous legal thought, strategic clarity, and purposeful advocacy. Astreus Legal reflects his belief that complex legal matters demand not only strong advocacy, but also careful preparation, intellectual discipline, and a clear understanding of the client's objectives.
       `,
   },
   {
@@ -33,7 +35,7 @@ const peopleData = [
       
       Sreeraj Prabhakaran is known for his meticulous drafting, thorough research, and ability to simplify complex intellectual property issues for clients. His approach combines legal accuracy with a business-minded perspective, ensuring that clients not only protect their rights but also enhance the commercial value of their creations and innovations.Apart from litigation and advisory work, he possesses hands-on experience in IP strategy development, contractual drafting for technology-driven enterprises, and negotiation of licensing and assignment agreements. His commitment to ethical practice, client transparency, and consistent communication forms the foundation of his professional ethos.`,
   },
-  {
+/*   {
     id: "ashish-chaudhary",
     name: "Ashish Chaudhary",
     image: Person2,
@@ -41,7 +43,7 @@ const peopleData = [
       `Ashish Chaudhary is a committed legal professional specialising in Loan Settlement Matters and Banking Laws, known for his strong command over financial regulations and his ability to navigate complex banking disputes with clarity and precision. His practice focuses on assisting individuals, businesses, and financial institutions in resolving debt-related issues through strategic negotiation, legal intervention, and structured settlement mechanisms.With extensive experience in dealing with matters related to loan recovery, NPA accounts, restructuring of credit facilities, settlement negotiations, SARFAESI proceedings, and disputes involving lending institutions, he has earned recognition for delivering practical, result-oriented solutions. His expertise lies in analysing financial documents, identifying legal vulnerabilities, and formulating effective strategies that balance compliance with client-centric outcomes.
       
       Ashish Chaudhary has represented clients before various forums and authorities, offering guidance on banking regulations, RBI directives, recovery processes, and settlement frameworks. His hands-on experience enables him to handle sensitive financial disputes with professionalism, discretion, and a deep understanding of the regulatory environment.Known for his methodical approach and strong negotiating skills, he consistently strives to secure favourable settlements while protecting the long-term interests of his clients. His advisory work extends to drafting and reviewing financial agreements, providing compliance support, and assisting clients in understanding their legal and contractual obligations within the banking sector0.`,
-  },
+  }, */
 ];
 
 

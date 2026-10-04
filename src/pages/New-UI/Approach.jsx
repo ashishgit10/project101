@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import scales from "../../assets/logo-justice.jpeg";
+import scales from "../../assets/blind1.jpeg";
 export const Approach = () => {
     
   return (

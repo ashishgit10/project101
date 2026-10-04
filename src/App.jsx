@@ -14,7 +14,7 @@ import Terms from "./pages/Terms&policy/Terms";
 export default function App() {
   return (
     <div>
-      <main className="flex-grow">
+      <main className="flex-grow bg-[#031d3c]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/expertise" element={<Expertise />} />

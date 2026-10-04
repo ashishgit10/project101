@@ -19,23 +19,23 @@ function Rpeople() {
                   </p>
                   <Link
                     className="mt-3 inline-flex items-center gap-3 border-b pb-1 text-[11px]"
-                    to="/peoplepage"
+                    
                   >
-                    Meet Our Team <ArrowRight size={14} />
+                    Meet Our Team 
                   </Link>
                 </div>
                 {people.map((person, index) => (
                     <div key={index}>
                   <Link to={`/advocate/${person.id}`}>
                     <img
-                      className="h-40 w-full border border-[#dbb36d]/60 object-cover object-top sm:h-36"
+                      className="h-40 w-full border border-[#dbb36d]/60 object-cover object-top sm:h-52"
                       src={person.image}
                       alt={person.name}
                     />
-                    <h3 className="mt-2 font-serif text-base">{person.name}</h3>
-                    <p className="text-[9px] text-slate-200">
+                    <div className="mt-3 font-serif text-base">{person.name}</div>
+                   {/*  <p className="text-[9px] text-slate-200">
                       {index === 0 ? "Managing Partner" : "Partner"}
-                    </p>
+                    </p> */}
                   </Link>
                   </div>
                 ))}

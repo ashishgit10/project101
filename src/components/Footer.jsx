@@ -24,8 +24,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#f5f1e9] text-[#003366] py-10 relative">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+    <footer className="bg-[#f5f1e9] text-[#003366]  py-10 relative">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
 
         {/* Left */}
         <div className="flex flex-col items-start">
@@ -86,7 +86,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center mt-8 text-sm text-[#003366]">
-        © 2025, All Rights Reserved.
+        © 2026, All Rights Reserved.
       </div>
     </footer>
   );

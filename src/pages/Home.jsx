@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Menu, X, Linkedin, Instagram } from "lucide-react";
-import courthouse from "../assets/blind1.jpeg";
+import courthouse from "../assets/blind2.jpeg";
 
 import notebook from "../assets/logo.jpeg";
 
@@ -11,39 +11,9 @@ import Practice from "./New-UI/Practice";
 import YAstreus from "./New-UI/YAstreus";
 import Rpeople from "./New-UI/Rpeople";
 import Experience from "./New-UI/Experience";
+import Footer from "./New-UI/Footer";
+import Navbar from "../components/Navbar";
 
-const practices = [
-  [
-    "Corporate &",
-    "Commercial",
-    "Advising on transactions, corporate governance, M&A and commercial contracts.",
-  ],
-  [
-    "Dispute Resolution",
-    "",
-    "Strategic representation in litigation, arbitration and alternative dispute resolution.",
-  ],
-  [
-    "Real Estate",
-    "",
-    "Support across real estate transactions, development, leasing and regulatory approvals.",
-  ],
-  [
-    "Insolvency &",
-    "Restructuring",
-    "Guiding businesses through financial distress, restructuring and resolution processes.",
-  ],
-  [
-    "Intellectual Property",
-    "",
-    "Protection and enforcement of your innovation, brand and creative assets.",
-  ],
-  [
-    "Regulatory &",
-    "Compliance",
-    "Advisory on regulatory frameworks, sectoral laws and compliance strategy.",
-  ],
-];
 const nav = [
   "Home",
   "About",
@@ -325,52 +295,7 @@ export default function Home() {
     "inline-flex items-center justify-center gap-3 px-4 py-3 text-[10px] sm:px-5";
   return (
     <div className="overflow-hidden bg-[#031d3c] font-sans text-[#10294a]">
-      <header className="absolute z-30 flex h-16 w-full items-center justify-between border-b border-white/15 bg-[#031d3c] px-5 text-white lg:h-[74px] lg:px-[5.5vw]">
-        <a
-          href="#home"
-          className={`${wordmark} lg:border-r lg:border-white/35 lg:pr-8`}
-        >
-          <span>ASTREUS</span>
-          <small className="mt-1.5 font-sans text-[6px] tracking-[.35em]">
-            — LEGAL —
-          </small>
-        </a>
-        <nav
-          className={`${menuOpen ? "translate-x-0" : "translate-x-full"} fixed inset-0 z-[-1] flex min-h-screen w-full flex-col items-start gap-7 bg-[#031d3c] px-7 pt-28 transition-transform duration-300 lg:static lg:z-auto lg:min-h-0 lg:flex-1 lg:translate-x-0 lg:flex-row lg:items-center lg:justify-center lg:gap-9 lg:bg-transparent lg:p-0 xl:gap-11`}
-        >
-          {nav.map((item, i) => (
-            <a
-              key={item}
-              onClick={closeMenu}
-              href={anchor(item)}
-              className={`font-serif text-3xl text-white hover:text-[#dbb36d] lg:font-sans lg:text-xs ${i === 0 ? "lg:border-b-2 lg:border-[#dbb36d] lg:pb-3" : ""}`}
-            >
-              {item}
-            </a>
-          ))}
-          <a
-            className="mt-4 flex items-center gap-2 border border-[#dbb36d] px-5 py-3 text-xs text-white lg:hidden"
-            href="#contact"
-            onClick={closeMenu}
-          >
-            Speak With Counsel <ArrowRight size={15} />
-          </a>
-        </nav>
-        <a
-          className="hidden items-center gap-2 border border-[#dbb36d]/80 px-5 py-3 text-[11px] lg:flex"
-          href="#contact"
-        >
-          Speak With Counsel <ArrowRight size={14} />
-        </a>
-        <button
-          className="relative z-10 lg:hidden"
-          aria-label="Toggle navigation"
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </header>
+      <Navbar/>
       <main>
         <section
           id="home"
@@ -384,28 +309,36 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#021630]/95 via-[#021c3a]/75 to-[#021c3a]/10" />
           <div className="relative mx-auto w-[calc(100%-40px)] max-w-[1360px] pb-16 sm:w-[89vw] sm:pt-24 sm:pb-0">
             <p className={eyebrow}>ASTREUS LEGAL</p>
-            <h1 className="mb-5 font-serif text-5xl leading-[.97] tracking-[-.05em] sm:text-[clamp(45px,5.1vw,76px)]">
-              Counsel, Strategy.
+            <h1 className="mb-5 font-serif text-[#dbb36d] text-5xl leading-[.97] tracking-[-.05em] sm:text-[clamp(45px,5.1vw,76px)]">
+              Where Precision
               <br />
-              Resolution.
+              Shapes Outcomes.
             </h1>
-            <p className="max-w-[395px] text-lg leading-relaxed text-slate-200 sm:text-[20px]">
-              Strategic legal counsel for complex matters. Astreus Legal advises
-              businesses, institutions and individuals on matters where legal
-              precision, commercial understanding and discretion matter.
+            <p className="max-w-[395px] text-lg leading-relaxed text-slate-200 sm:text-[18px]">
+              We advise on matters where law, business, and strategy intersect.
+              Astreus Legal brings together legal precision, commercial insight,
+              and provide rational solutions to navigate complexity and protect
+              what matters most. Every matter receives thoughtful attention and
+              purposeful execution.
             </p>
             <div className="mt-6 flex gap-2 sm:gap-4">
               <a
                 className={`${button} bg-[#dbb36d] text-[#10294a]`}
                 href="#practice-areas"
               >
-                Explore Our Practice <ArrowRight size={14} />
+              <span className="text-md sm:text-sm">
+                Explore Our Practice 
+                </span>
+                <ArrowRight size={14} />
               </a>
               <a
-                className={`${button} border border-[#dbb36d]`}
-                href="#contact"
+                className={`${button} text-md sm:text-sm border border-[#dbb36d]`}
+               href="https://wa.me/916200879825"
               >
+                <span className="text-sm sm:text-[18px]">
+
                 Speak With Counsel
+                </span>
               </a>
             </div>
           </div>
@@ -415,6 +348,7 @@ export default function Home() {
         <YAstreus />
         <Rpeople />
         <Experience />
+        <Footer />
       </main>
     </div>
   );

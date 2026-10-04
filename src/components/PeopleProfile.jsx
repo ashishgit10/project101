@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
 import peopleData from "./Data/people.js";
 import Navbar from "./Navbar.jsx";
-import Footer from "./Footer.jsx";
+
 import { useEffect } from "react";
+import Footer from "../pages/New-UI/Footer.jsx";
 
 export default function PeopleProfile() {
   const { id } = useParams();
@@ -28,9 +29,9 @@ export default function PeopleProfile() {
           className="w-64 h-80 object-cover mx-auto rounded shadow-[10px_10px_0px_#e8b520]"
         />
 
-        <h1 className="text-3xl font-bold text-center mt-6 text-[#004b87]">
+        <div className="text-3xl font-bold text-center mt-6 text-[#004b87]">
           Adv. {person.name}
-        </h1>
+        </div>
 
         <p
           className="  text-gray-700 mt-6
